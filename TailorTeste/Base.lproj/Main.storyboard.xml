@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Ir-bG-a9w">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mensagens-->
+        <scene sceneID="9vp-Ve-fNT">
+            <objects>
+                <viewController id="4de-yJ-acA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WQc-ec-FyW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GEl-nd-zV7"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mensagens" image="message-7" id="3qT-ek-Lf2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cx8-iW-J60" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680" y="766"/>
+        </scene>
+        <!--Perfil-->
+        <scene sceneID="teF-g2-DxT">
+            <objects>
+                <viewController id="bjc-F4-hGf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aw4-oU-ZIr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="G6K-xj-G5Q"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Perfil" image="list-fat-7" id="ghX-xO-as4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bk1-yA-ULW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="1481"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="9PO-1X-Cwx">
+            <objects>
+                <viewController id="d09-SU-8Dh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Spj-Rh-Zue">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="S1O-18-col"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Menu" image="shirt-7" id="FzG-So-l8i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AFa-5x-j8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="677" y="-591"/>
+        </scene>
+        <!--Busca-->
+        <scene sceneID="vZy-I3-NwO">
+            <objects>
+                <viewController id="NRr-Sg-1Jz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RgN-Tg-99L">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Hcf-gF-1EO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Busca" image="search-7" id="GKL-fH-757"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jMY-mB-UQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="680" y="101"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Qn0-mQ-tto">
+            <objects>
+                <tabBarController id="9Ir-bG-a9w" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eLK-O5-7Id">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="d09-SU-8Dh" kind="relationship" relationship="viewControllers" id="g0Z-Qu-ogu"/>
+                        <segue destination="NRr-Sg-1Jz" kind="relationship" relationship="viewControllers" id="hJU-jE-p6e"/>
+                        <segue destination="4de-yJ-acA" kind="relationship" relationship="viewControllers" id="BJW-e9-Ce6"/>
+                        <segue destination="bjc-F4-hGf" kind="relationship" relationship="viewControllers" id="GDN-qy-hiB"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAO-wz-Je5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-271" y="433"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="list-fat-7" width="30" height="30"/>
+        <image name="message-7" width="30" height="30"/>
+        <image name="search-7" width="30" height="30"/>
+        <image name="shirt-7" width="30" height="30"/>
+    </resources>
+</document>
